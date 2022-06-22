@@ -1,19 +1,19 @@
 # Game of Life Server
-This project is the server side of an application based on "Game of Life".
+This project is the server side of an application based on "Game of Life".<br />
 The server is containing the game logic, and exporting endpoints for the client to communicate and perform actions to state.
 
 # General Architecture of the application
-The main technologies that were used are:
-Typescript
-Express
-Cors
+The main technologies that were used are:<br />
+Typescript<br />
+Express<br />
+Cors<br />
 Body-Parser
 
 Using "express" to create the app and routers with "cors" to allow all clients to access the endpoints, and "body-parser" to get the request body when needed.
 
 # The Reasoning behing the main technical choices
-I decided to use "express" because this is the easiest way I know to start a server application.
-I decided to use "cors" to recognize all origins because when I tried running the server only with express, the access to the endpoints failed.
+I decided to use "express" because this is the easiest way I know to start a server application.<br />
+I decided to use "cors" to recognize all origins because when I tried running the server only with express, the access to the endpoints failed.<br />
 I decided to use "body-parser" because before using it I didn't find the body of the request.
 
 # Things that wasn't implemented or trade-offs
@@ -25,6 +25,6 @@ If I could spend more time on the assignment, I would:
 
 # Run project locally instructions
 1. Clone the project
-2. Run "npm i"
-3. run "npm run build"
-4. run "npm start"
+2. Inside the projcet folder Run:<br />
+    a. "npm i"<br />
+    b. "npm start"
