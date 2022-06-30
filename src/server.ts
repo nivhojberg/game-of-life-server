@@ -3,7 +3,6 @@ import cors from "cors";
 import router from './router';
 
 const app = express();
-const API_URL = "http://localhost";
 const PORT = 3000;
 
 const corsOptions = {
@@ -16,10 +15,10 @@ app.use(cors(corsOptions));
 app.use((req, _res, next) => {
     console.log(req.path, req.method);
     next();
-})
+});
 
 app.use(router);
 
 app.listen(PORT, () => {
-    console.log(`app listening on ${API_URL}:${PORT}`);
+    console.log(`app listening on port ${PORT}`);
 });
